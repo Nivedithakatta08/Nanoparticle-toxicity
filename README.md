@@ -16,24 +16,7 @@ This project builds a supervised ML pipeline that:
 
 ---
 
-## 🗂️ Project Structure
 
-​```
-Nanoparticle-toxicity/
-├── src/
-│   ├── __init__.py
-│   ├── data_generator.py
-│   ├── train.py
-│   └── predict.py
-├── data/
-├── model/
-│   └── best_model.pkl
-├── results/
-├── main.py
-├── requirements.txt
-└── README.md
-​```
----
 
 ## 🔬 Features Used
 
