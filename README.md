@@ -1,6 +1,6 @@
 # 🧬 Nanoparticle Toxicity Predictor
 
-A machine learning project that predicts the toxicity of nanoparticles based on their physicochemical properties. Three classification algorithms are compared — Random Forest, SVM, and KNN — with Random Forest achieving the highest accuracy of **87%**.
+A machine learning project that predicts the toxicity of nanoparticles based on their physicochemical properties. Three classification algorithms are compared (Random Forest, SVM, and KNN) with Random Forest achieving the highest accuracy of **87%**.
 
 ---
 
@@ -17,18 +17,22 @@ This project builds a supervised ML pipeline that:
 ---
 
 ## 🗂️ Project Structure
+
+​```
 Nanoparticle-toxicity/
 ├── src/
-│   ├── __init__.py        
+│   ├── __init__.py
 │   ├── data_generator.py
 │   ├── train.py
 │   └── predict.py
-├── main.py                
-├── requirements.txt
 ├── data/
 ├── model/
-└── results/
+│   └── best_model.pkl
+├── results/
+├── main.py
+├── requirements.txt
 └── README.md
+​```
 ---
 
 ## 🔬 Features Used
