@@ -1,32 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Nanoparticle Toxicity Predictor</title>
-  <style>
-    body { font-family: Arial, sans-serif; margin: 40px; }
-    h1 { color: #2c3e50; }
-    form { margin-top: 20px; }
-    input, button { padding: 10px; margin: 5px; }
-    .result { margin-top: 20px; font-weight: bold; }
-  </style>
+    <meta charset="UTF-8">
+    <title>Nanoparticle Toxicity Predictor</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 40px; }
+        h1 { color: #333; }
+        form { margin-bottom: 20px; }
+        label { display: block; margin-top: 10px; }
+        input { padding: 5px; width: 200px; }
+        button { margin-top: 15px; padding: 8px 15px; }
+        .prediction { margin-top: 20px; font-weight: bold; color: #006400; }
+    </style>
 </head>
 <body>
-  <h1>Nanoparticle Toxicity Predictor</h1>
-  <p>Enter physicochemical properties to predict toxicity:</p>
-  
-  <form action="/predict" method="post">
-    <label>Property 1: <input type="text" name="prop1" required></label><br>
-    <label>Property 2: <input type="text" name="prop2" required></label><br>
-    <label>Property 3: <input type="text" name="prop3" required></label><br>
-    <label>Property 4: <input type="text" name="prop4" required></label><br>
-    <button type="submit">Predict</button>
-  </form>
+    <h1>Nanoparticle Toxicity Predictor</h1>
+    <form action="/predict" method="POST">
+        <label for="prop1">Property 1:</label>
+        <input type="text" id="prop1" name="prop1" required>
 
-  {% if prediction %}
-    <div class="result">
-      Prediction: {{ prediction }}
-    </div>
-  {% endif %}
+        <label for="prop2">Property 2:</label>
+        <input type="text" id="prop2" name="prop2" required>
+
+        <label for="prop3">Property 3:</label>
+        <input type="text" id="prop3" name="prop3" required>
+
+        <label for="prop4">Property 4:</label>
+        <input type="text" id="prop4" name="prop4" required>
+
+        <button type="submit">Predict</button>
+    </form>
+
+    {% if prediction %}
+        <div class="prediction">
+            Prediction: {{ prediction }}
+        </div>
+    {% endif %}
 </body>
 </html>
