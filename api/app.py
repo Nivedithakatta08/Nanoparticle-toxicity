@@ -3,7 +3,8 @@ import joblib
 import numpy as np
 
 app = Flask(__name__)
-model = joblib.load("model/nanoparticle_model.pkl")  # adjust path if needed
+model = joblib.load("model/best_model.pkl")
+
 
 @app.route("/")
 def home():
