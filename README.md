@@ -2,7 +2,7 @@
 
 A supervised machine learning pipeline that classifies nanoparticles as 
 toxic or non-toxic based on physicochemical properties. Compares Random 
-Forest, SVM, and KNN — Random Forest achieves the highest accuracy at ~87%.
+Forest, SVM, and KNN. Random Forest achieves the highest accuracy at ~87%.
 
 > Note: Currently trained on synthetic data. Accuracy figures reflect 
 > learned synthetic patterns, not validated toxicological outcomes. 
@@ -17,8 +17,8 @@ makes bulk-material safety data unreliable for predicting their biological
 effects. Smaller particle size exponentially increases surface-area-to-volume 
 ratio, which directly correlates with cellular reactivity and toxicity potential.
 
-Lab-based toxicity testing is expensive and slow. Computational approaches — 
-particularly ML models trained on physicochemical descriptors — offer a faster, 
+Lab-based toxicity testing is expensive and slow. Computational approaches,
+particularly ML models trained on physicochemical descriptors, offer a faster, 
 lower-cost alternative for early-stage hazard screening.
 
 ---
@@ -106,7 +106,7 @@ Python · Scikit-learn · Pandas · NumPy · Matplotlib · Joblib · Flask
 
 ## Limitations & Roadmap
 
-The dataset is synthetically generated — the model learns the rules used 
+The dataset is synthetically generated and the model learns the rules used 
 to produce the data, not real toxicity biology. This is the primary 
 credibility gap.
 
