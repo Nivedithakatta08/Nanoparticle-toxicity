@@ -55,27 +55,6 @@ on 177 test samples — 2 misclassifications.
 
 ---
 
-## Project Structure
-
-Nanoparticle-toxicity/
-│
-├── dataset/
-│   └── nanotox_dataset.csv
-│
-├── model/
-│   ├── best_model_rf.pkl
-│   ├── scaler.pkl
-│   └── label_encoder.pkl
-│
-├── src/
-│   ├── train.py
-│   └── predict.py
-│
-├── main.py
-├── app.py
-└── README.md
----
-
 ## Setup
 
 ```bash
