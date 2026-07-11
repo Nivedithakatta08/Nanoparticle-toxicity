@@ -1,7 +1,7 @@
 # Nanoparticle Toxicity Predictor
 
 A supervised ML pipeline that classifies nanoparticles as toxic or non-toxic
-based on physicochemical properties. Compares Random Forest, SVM, and KNN —
+based on physicochemical properties. Compares Random Forest, SVM, and KNN.
 Random Forest achieves the highest accuracy at 98.87%.
 
 ---
@@ -11,7 +11,7 @@ Random Forest achieves the highest accuracy at 98.87%.
 Nanoparticles (1–100 nm) exhibit unique physicochemical behavior that makes
 their toxicity difficult to predict from bulk material properties alone.
 Key drivers of toxicity include particle size, surface charge, surface area,
-and core material — smaller particles with larger surface-to-volume ratios
+and core material. The smaller particles with larger surface-to-volume ratios
 tend to be significantly more reactive with biological tissue.
 
 Computational prediction offers a faster, lower-cost alternative to in vitro
