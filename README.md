@@ -53,17 +53,6 @@ confusion matrices. Random Forest also provides feature importance rankings.
 
 ---
 
-## Project Structure
-
-├── src/           # training and prediction logic
-├── model/         # serialized model (joblib)
-├── data/          # dataset
-├── results/       # output plots
-├── api/           # API layer
-├── templates/     # Flask HTML
-├── static/        # CSS/JS
-├── main.py        # entry point
-└── app.py         # web application
 
 ## Setup
 
